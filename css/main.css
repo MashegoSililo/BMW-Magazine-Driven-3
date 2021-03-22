@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  height: 15%;
+  background-color: white;
+  padding-bottom: 2%;  
+}
+
+.title {
+  margin-left: 3%;
+  padding-right: 25%;
+  font-family: 'Ramabhadra', sans-serif;
+  color: #2F323A;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: black;
+  padding-left: 25%;
+  font-size: 2vh;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+}
+
+footer {
+  width: 100%;
+  color: white;
+  background-color: rgb(39, 37, 37);
+}
+
+.footer-title {
+  padding-top: 1%;
+  margin-left: 3%;
+}
+
+.footer-nav {
+  margin-left: 3%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+
+.block {
+  padding-right: 1%;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links:hover, .news-links:hover {
+  text-decoration: underline;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+}
+
+.news-article, .snippet, .emotion-img{
+    width: 45%;
+    padding: 1%;
+    margin: 1%;
+    text-align: left;
+    font-size: 2.5vh;
+    border-bottom: 0.5px solid black;
+    justify-content: center;
+}
+
+.news-1 {
+  text-align: center;
+  font-size: 4vh;
+}
+
+.news-links{
+  text-decoration:none;
+  color: black;
+  text-align: right;
+}
+
+.caption{
+  text-align: center;
+}
+
+.story {
+  display: flex;
+}
+
+.long-piece{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.i3 {
+  border-bottom: 0.5px solid black;
+}
+
+.jury{
+  display: flex;
+}
+
+
+/* Media Queries: Tablet portrait */
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    margin: 5px;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background-color: #ebe5e5;
+    color: black;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(39, 37, 37);
+  }
+
+  .footer-nav {
+    margin-left: 3%;
+    display: block;
+  }
+
+  .articles{
+    display: block;
+    margin-left: 3%;
+}
+
+.article{
+    width: 85%;
+    padding: 1%
+}
+}
