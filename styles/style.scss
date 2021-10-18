@@ -42,15 +42,30 @@ header {
   .news {
     @include column(15%);
   }
+  .news-img{
+    width: 200px;
+    height: 150px;
+  }
   .features {
     @include column(50%);
   }
   .feature-article {
     display: none;
   }
+  .feature-cover{
+    width: 570px;
+    height: 350px;
+  }
   .editorial {
     @include column(30%);
     border-right: none;
+    article {
+      padding-bottom: 2%;
+    }
+  }
+  .editorial-img{
+    width: 340px;
+    height: 250px;
   }
 }
 .article-focus {

@@ -55,6 +55,11 @@ header ul li {
   width: 15%;
 }
 
+.tripartite .news-img {
+  width: 200px;
+  height: 150px;
+}
+
 .tripartite .features {
   padding: 2%;
   border-right: 0.5px solid black;
@@ -65,11 +70,25 @@ header ul li {
   display: none;
 }
 
+.tripartite .feature-cover {
+  width: 570px;
+  height: 350px;
+}
+
 .tripartite .editorial {
   padding: 2%;
   border-right: 0.5px solid black;
   width: 30%;
   border-right: none;
+}
+
+.tripartite .editorial article {
+  padding-bottom: 2%;
+}
+
+.tripartite .editorial-img {
+  width: 340px;
+  height: 250px;
 }
 
 .article-focus {
