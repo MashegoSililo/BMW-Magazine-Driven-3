@@ -1,0 +1,115 @@
+
+
+@mixin column($width) {
+  padding: 2%;
+  border-right: 0.5px solid black;
+  width: $width;
+}
+@mixin flexBox($justify){
+  display:flex;
+  align-items: baseline;
+  justify-content: $justify;
+}
+header {
+  border-bottom: 0.5px solid rgb(100, 99, 99);
+  margin-left: 5%;
+  margin-right: 5%;
+  div, section {
+    @include flexBox(space-between)
+  }
+  h1 {
+    margin: 1%;
+  }
+  h4 {
+    margin-top: 1%;
+    color: rgb(100, 99, 99);
+  }
+  ul {
+    @include flexBox(space-around);
+    list-style: none;
+    li {
+      padding-right: 10%
+    }
+
+  }
+}
+
+.tripartite {
+  display: flex;
+  margin: 1%;
+  padding: 2%;
+
+  .news {
+    @include column(15%);
+  }
+  .features {
+    @include column(50%);
+  }
+  .feature-article {
+    display: none;
+  }
+  .editorial {
+    @include column(30%);
+    border-right: none;
+  }
+}
+.article-focus {
+  display: flex;
+  h3{
+    padding-right: 2%;
+  }
+  .view-controls {
+    @include flexBox(space-around);
+    width: 70vh;
+  }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  align-items:center;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 10vh;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: white
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+  color: black;
+  width: 110%;
+  padding: 2%;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}

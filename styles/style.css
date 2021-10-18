@@ -1,0 +1,149 @@
+header {
+  border-bottom: 0.5px solid #646363;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header div, header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header h1 {
+  margin: 1%;
+}
+
+header h4 {
+  margin-top: 1%;
+  color: #646363;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+header ul li {
+  padding-right: 10%;
+}
+
+.tripartite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1%;
+  padding: 2%;
+}
+
+.tripartite .news {
+  padding: 2%;
+  border-right: 0.5px solid black;
+  width: 15%;
+}
+
+.tripartite .features {
+  padding: 2%;
+  border-right: 0.5px solid black;
+  width: 50%;
+}
+
+.tripartite .feature-article {
+  display: none;
+}
+
+.tripartite .editorial {
+  padding: 2%;
+  border-right: 0.5px solid black;
+  width: 30%;
+  border-right: none;
+}
+
+.article-focus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article-focus h3 {
+  padding-right: 2%;
+}
+
+.article-focus .view-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70vh;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 10vh;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+  color: black;
+  width: 110%;
+  padding: 2%;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
