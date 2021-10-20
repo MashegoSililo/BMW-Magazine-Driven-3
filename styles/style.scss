@@ -1,7 +1,7 @@
 
-
 @mixin column($width) {
-  padding: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   border-right: 0.5px solid black;
   width: $width;
 }
@@ -10,6 +10,19 @@
   align-items: baseline;
   justify-content: $justify;
 }
+
+@mixin links {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+// Header
 header {
   border-bottom: 0.5px solid rgb(100, 99, 99);
   margin-left: 5%;
@@ -30,24 +43,39 @@ header {
     li {
       padding-right: 10%
     }
-
+  }
+  nav {
+    @include flexBox(space-around)
+  }
+  a{
+    @include links()
+  }
+  .home {
+    font-size: 5vh;
   }
 }
 
 .tripartite {
   display: flex;
-  margin: 1%;
-  padding: 2%;
+  margin-left: 3%;
+  margin-right: 5%;
 
   .news {
-    @include column(15%);
+    @include column(20%);
   }
   .news-img{
-    width: 200px;
+    width: 180px;
     height: 150px;
   }
   .features {
     @include column(50%);
+    a {
+      text-decoration: none;
+      color: black;
+      a:hover {
+        color: rgb(145, 102, 22)
+      }
+    }
   }
   .feature-article {
     display: none;
@@ -57,7 +85,7 @@ header {
     height: 350px;
   }
   .editorial {
-    @include column(30%);
+    @include column(25%);
     border-right: none;
     article {
       padding-bottom: 2%;
@@ -65,7 +93,7 @@ header {
   }
   .editorial-img{
     width: 340px;
-    height: 250px;
+    height: 400px;
   }
 }
 .article-focus {
@@ -127,4 +155,34 @@ header {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+}
+//  News.html
+.articles{
+  @include flexBox(space-evenly);
+  flex-wrap: wrap;
+}
+.news-article, .snippet, .emotion-img{
+  width: 40%;
+  padding: 1%;
+  margin: 1%;
+  text-align: left;
+  font-size: 2.5vh;
+  border-bottom: 0.5px solid black;
+  justify-content: center;
+}
+
+.news-1 {
+text-align: center;
+font-size: 4vh;
+}
+
+.news-links{
+text-decoration:none;
+color: black;
+text-align: right;
+}
+
+// Features
+.story {
+  display: flex;
 }

@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
 header {
   border-bottom: 0.5px solid #646363;
   margin-left: 5%;
@@ -41,29 +47,60 @@ header ul li {
   padding-right: 10%;
 }
 
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+header .home {
+  font-size: 5vh;
+}
+
 .tripartite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1%;
-  padding: 2%;
+  margin-left: 3%;
+  margin-right: 5%;
 }
 
 .tripartite .news {
-  padding: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   border-right: 0.5px solid black;
-  width: 15%;
+  width: 20%;
 }
 
 .tripartite .news-img {
-  width: 200px;
+  width: 180px;
   height: 150px;
 }
 
 .tripartite .features {
-  padding: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   border-right: 0.5px solid black;
   width: 50%;
+}
+
+.tripartite .features a {
+  text-decoration: none;
+  color: black;
+}
+
+.tripartite .features a a:hover {
+  color: #916616;
 }
 
 .tripartite .feature-article {
@@ -76,9 +113,10 @@ header ul li {
 }
 
 .tripartite .editorial {
-  padding: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   border-right: 0.5px solid black;
-  width: 30%;
+  width: 25%;
   border-right: none;
 }
 
@@ -88,7 +126,7 @@ header ul li {
 
 .tripartite .editorial-img {
   width: 340px;
-  height: 250px;
+  height: 400px;
 }
 
 .article-focus {
@@ -164,5 +202,48 @@ header ul li {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+}
+
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news-article, .snippet, .emotion-img {
+  width: 40%;
+  padding: 1%;
+  margin: 1%;
+  text-align: left;
+  font-size: 2.5vh;
+  border-bottom: 0.5px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news-1 {
+  text-align: center;
+  font-size: 4vh;
+}
+
+.news-links {
+  text-decoration: none;
+  color: black;
+  text-align: right;
+}
+
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
